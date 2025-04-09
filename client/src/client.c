@@ -147,7 +147,7 @@ void paquete(int conexion)
 	leido = readline("> ");
 
 	while(strcmp(leido, "") != 0){  
-		agregar_a_paquete(paquete, leido, strlen(leido + 1));
+		agregar_a_paquete(paquete, leido, strlen(leido) + 1);
 		free(leido);
         leido = readline("> ");
     }
